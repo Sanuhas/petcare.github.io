@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pet Care Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  display: flex-end;
+  justify-content: space-between; 
+  box-sizing: border-box;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.header {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.pet-care {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.pet-care:hover {
+  background-color: #111;
+}
+
+
+.header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container {
+  display: flex;
+  margin: 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  min-width: 10%;
+  width: 480px; 
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto; 
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.product-container,
+.services-container,
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.products,
+.services,
+.contact {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.product,
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin: 20px 0;
+}
+
+.product .text-container,
+.service .text-container {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.product img,
+.service img {
+  max-width: 48%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product h3,
+.service h3 {
+  text-align: left;
+  font-size: 2.5vw; 
+}
+
+.product p,
+.service p {
+  font-size: 1.5vw;
+}
+
+.products-title,
+.services-title,
+.contact-title {
+  text-align: center;
+  font-size: 3vw;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.services {
+  background-color: #f4f4f4; 
+  padding: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  max-width: 100%;
+  width: 100%; 
+  position: fixed;
+  bottom: 0;
+  left: 0; 
+}
+
+
+  text-align: center;
+  font-size: 3vw; 
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.contact p {
+  font-size: 1.5vw; 
+}
+
+</style>
+
+</head>
+<body>
+
+<ul>
+  <li><a href="#contact">Contact Us</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#products">Products</a></li>
+  <li><a href="#home">Home</a></li>
+</ul>
+<div class="home" id="home">
+<div class="header">
+  <img src="header-image.jpg" alt="Header">
+</div>
+
+<div class="image-container">
+  <img src="image1.jpg" alt="Image 1">
+  <img src="image2.jpg" alt="Image 2">
+  <img src="image3.jpg" alt="Image 3">
+  <img src="image4.jpg" alt="Image 4">
+</div></div>
+
+<div class="products" id="products">
+<h2 class="products-title">Our Products</h2>
+<div class="product-container">
+  <div class="product">
+    <div class="text-container">
+      <h3>Healthy Pet Food</h3>
+      <p>Give your furry friend the best nutrition with our Healthy Pet Food. Specially formulated to meet the dietary needs of pets, it contains a balanced mix of essential nutrients, vitamins, and minerals for optimal health.</p>
+    </div>
+    <img src="product1.jpg" alt="Healthy Pet Food">
+  </div>
+  <div class="product">
+    <img src="product2.jpg" alt="Pet Grooming Kit">
+    <div class="text-container">
+      <h3>Pet Grooming Kit</h3>
+      <p>Pamper your pet with our Pet Grooming Kit. This all-in-one grooming solution includes high-quality grooming tools, shampoos, and brushes, ensuring your pet looks and feels their best. Keep your pet's coat shiny and healthy with our grooming kit.</p>
+    </div>
+  </div>
+</div> </div>
+
+<div class="services" id="services">
+  <h2 class="services-title">Our Services</h2>
+  <div class="services-container">
+    <div class="service">
+      <div class="text-container">
+        <h3>Veterinary Consultation</h3>
+        <p>Our experienced veterinarians provide comprehensive veterinary consultations to ensure the health and well-being of your pets. Schedule an appointment for a thorough examination and personalized care plan.</p>
+      </div>
+      <img src="service1.jpg" alt="Veterinary Consultation">
+    </div>
+    <div class="service">
+      <img src="service2.jpg" alt="Pet Boarding">
+      <div class="text-container">
+        <h3>Pet Boarding</h3>
+        <p>When you're away, trust us to care for your pets in a safe and comfortable environment. Our pet boarding services include daily walks, playtime, and attentive care to make your pet's stay enjoyable.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact" id="contact">
+    <h2 class="contact-title">Contact Us</h2>
+    <div class="contact-container">
+        <div class="text-container">
+          <p align="center">For inquiries and appointments, please contact us via email or phone. Our dedicated team is here to assist you with any questions you may have about our services or products.</p>
+        </div>
+		
+<div class="footer">
+  &copy; 2024 Pet Care Website. All rights reserved.
+</div>
+
+</body>
+</html>
